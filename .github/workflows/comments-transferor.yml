@@ -1,0 +1,24 @@
+name: Comments Transferor
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+    if: ${{ github.event.issue.number == 1 }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: comments-transferor
+      cancel-in-progress: true
+    steps:
+      - name: Transfer comments
+        uses: noraworld/comments-transferor@main
+        with:
+          target_issue_repo: noraworld/diary
+          target_issue_number: latest
+          personal_access_token: GH_TOKEN
+          replace_twitter_short_url: true
+          trim_empty_image_tag: true
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
