@@ -20,5 +20,8 @@ jobs:
           personal_access_token: GH_TOKEN
           replace_twitter_short_url: true
           trim_empty_image_tag: true
+          linkify_hashtags: true
+          move_trailing_urls_to_next_lines: true
+          remove_spaces_after_japanese_punctuation: true
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
