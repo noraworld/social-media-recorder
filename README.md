@@ -1,5 +1,5 @@
 # Social Media Recorder
-Social Media Recorder is a repository where my posts on several social media are integrated with my diary.
+Social Media Recorder is a repository where my posts on several social media are integrated with [my diary](https://github.com/noraworld/diary). Even though this is my personal repository, you can establish a similar structure by following the instructions provided below.
 
 ## Setup
 Each comment posted on [Issue #1](https://github.com/noraworld/social-media-recorder/issues/1) is moved to the latest issue on my diary repository automatically. Here's how to setup like that.
