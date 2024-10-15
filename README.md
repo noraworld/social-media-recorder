@@ -79,3 +79,10 @@ You should lock the conversation on [Issue #1](https://github.com/noraworld/soci
 ```shell
 gh issue lock --repo noraworld/social-media-recorder 1
 ```
+
+## Expected questions
+### Why don't you specify directly on IFTTT which issue the posts will be shared with?
+Because IFTTT doesn't provide the option to specify the latest GitHub issue. You have to specify a static issue number, which means the special variable or programmatic way is not available.
+
+### Why don't you turn this repository private if you are concerned that someone posts a comment here?
+Because there is no limit to running workflows for public repositories! If it is possible to guarantee that nobody can play a trick and post a useless comment on purpose, free and no limit options are better, aren't they?
