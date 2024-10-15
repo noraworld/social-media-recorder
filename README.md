@@ -15,7 +15,7 @@ Each comment posted on [Issue #1](https://github.com/noraworld/social-media-reco
 | retweets        | unchecked                                              |
 | @replies        | unchecked                                              |
 
-<img src="assets/twitter_trigger.png?raw=true">
+<img src="assets/twitter_trigger.png?raw=true" width="70%">
 
 ##### Action
 | Field           | Value                                                 |
@@ -31,7 +31,7 @@ Each comment posted on [Issue #1](https://github.com/noraworld/social-media-reco
 > From [Twitter]({{LinkToTweet}})
 ```
 
-<img src="assets/twitter_action.png?raw=true">
+<img src="assets/twitter_action.png?raw=true" width="70%">
 
 #### Mastodon
 ##### Trigger
@@ -39,7 +39,7 @@ Each comment posted on [Issue #1](https://github.com/noraworld/social-media-reco
 | ----------------------- | -------------------------------------------------------------- |
 | Mastodon.social account | Your Mastodon.social account information associated with IFTTT |
 
-<img src="assets/mastodon_trigger.png?raw=true">
+<img src="assets/mastodon_trigger.png?raw=true" width="70%">
 
 ##### Action
 | Field           | Value                                                 |
@@ -57,7 +57,7 @@ Each comment posted on [Issue #1](https://github.com/noraworld/social-media-reco
 > From [Mastodon]({{Url}})
 ```
 
-<img src="assets/mastodon_action.png?raw=true">
+<img src="assets/mastodon_action.png?raw=true" width="70%">
 
 ### Lock conversation
 You should lock the conversation on [Issue #1](https://github.com/noraworld/social-media-recorder/issues/1) so that no one can post a comment here. Otherwise, someone's comment will be transferred to my diary.
