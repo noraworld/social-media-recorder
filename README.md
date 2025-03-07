@@ -70,6 +70,32 @@ Create your applets by following the instructions provided below.
 
 <img src="assets/mastodon_action.png?raw=true" width="70%">
 
+##### Misskey
+###### Trigger
+| Field              | Value                                                     |
+| ------------------ | --------------------------------------------------------- |
+| Misskey.io account | Your Misskey.io account information associated with IFTTT |
+
+<img src="assets/misskey_trigger.png?raw=true" width="70%">
+
+###### Action
+| Field           | Value                                                 |
+| --------------- | ----------------------------------------------------- |
+| GitHub account  | Your GitHub account information associated with IFTTT |
+| Repository Name | `noraworld/social-media-recorder`                     |
+| Issue Number    | `1`                                                   |
+| Comment         | See below                                             |
+
+```
+{{EntryContent}}
+
+![]({{EntryImageUrl}})
+
+> From [Misskey]({{EntryUrl}})
+```
+
+<img src="assets/misskey_action.png?raw=true" width="70%">
+
 ### Create workflow
 Create a workflow by following [`comments-transferor.yml`](.github/workflows/comments-transferor.yml).
 
