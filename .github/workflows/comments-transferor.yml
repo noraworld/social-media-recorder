@@ -25,5 +25,6 @@ jobs:
           move_trailing_urls_to_next_lines: true
           remove_spaces_after_japanese_punctuation: true
           trim_misskey_profile_icon_url: true
+          replace_misskey_image_url_with_multiple_ones: true
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
