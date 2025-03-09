@@ -3,6 +3,10 @@ name: Comments Transferor
 on:
   issue_comment:
     types: [created]
+  workflow_call:
+    secrets:
+      gh_token:
+        required: true
 
 jobs:
   build:
@@ -15,6 +19,8 @@ jobs:
       - name: Transfer comments
         uses: noraworld/comments-transferor@main
         with:
+          issue_repo: 'noraworld/social-media-recorder' # for workflow_call
+          issue_number: '1'                             # for workflow_call
           target_issue_repo: noraworld/reserved-diary
           target_issue_number: latest
           personal_access_token: GH_TOKEN
@@ -27,4 +33,4 @@ jobs:
           trim_misskey_profile_icon_url: true
           replace_misskey_image_url_with_multiple_ones: true
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN:  ${{ secrets.gh_token || secrets.GH_TOKEN }}
