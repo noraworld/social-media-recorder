@@ -28,4 +28,4 @@ jobs:
           trim_misskey_profile_icon_url: true
           replace_misskey_image_url_with_multiple_ones: true
         env:
-          GITHUB_TOKEN:  ${{ secrets.gh_token || secrets.GH_TOKEN }}
+          GH_TOKEN:  ${{ secrets.gh_token || secrets.GH_TOKEN }}
