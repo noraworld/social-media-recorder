@@ -1,0 +1,31 @@
+name: Comments Transferor Force
+
+on:
+  workflow_call:
+    secrets:
+      gh_token:
+        required: true
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Transfer comments
+        uses: noraworld/comments-transferor@main
+        with:
+          issue_repo: 'noraworld/social-media-recorder'
+          issue_number: '1'
+          target_issue_repo: noraworld/reserved-diary
+          target_issue_number: latest
+          personal_access_token: GH_TOKEN
+          replace_twitter_short_url: true
+          trim_empty_image_tag: true
+          linkify_hashtags: true
+          linkify_mentions: true
+          move_trailing_urls_to_next_lines: true
+          remove_spaces_after_japanese_punctuation: true
+          trim_misskey_profile_icon_url: true
+          replace_misskey_image_url_with_multiple_ones: true
+        env:
+          GITHUB_TOKEN:  ${{ secrets.gh_token || secrets.GH_TOKEN }}
