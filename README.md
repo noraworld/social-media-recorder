@@ -39,7 +39,7 @@ Create your applets by following the instructions provided below.
 ```
 {{Text}}
 
-> From [Twitter]({{LinkToTweet}})
+> From [Twitter]({{LinkToTweet}}) on {{CreatedAt}}
 ```
 
 <img src="assets/twitter_action.png?raw=true" width="70%">
@@ -65,7 +65,7 @@ Create your applets by following the instructions provided below.
 
 ![]({{MediaUrl}})
 
-> From [Mastodon]({{Url}})
+> From [Mastodon]({{Url}}) on {{CreatedAt}}
 ```
 
 <img src="assets/mastodon_action.png?raw=true" width="70%">
@@ -91,7 +91,7 @@ Create your applets by following the instructions provided below.
 
 ![]({{EntryImageUrl}})
 
-> From [Misskey]({{EntryUrl}})
+> From [Misskey]({{EntryUrl}}) on {{EntryPublished}}
 ```
 
 <img src="assets/misskey_action.png?raw=true" width="70%">
