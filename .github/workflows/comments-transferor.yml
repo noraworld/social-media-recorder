@@ -9,7 +9,7 @@ jobs:
     if: ${{ github.event.issue.number == 1 }}
     runs-on: ubuntu-latest
     concurrency:
-      group: comments-transferor
+      group: comments-transferor-v2
       cancel-in-progress: true
     steps:
       - name: Transfer comments
