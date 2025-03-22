@@ -27,5 +27,7 @@ jobs:
           remove_spaces_after_japanese_punctuation: true
           trim_misskey_profile_icon_url: true
           replace_misskey_image_url_with_multiple_ones: true
+          time_format_replacement_regex: "on.*?$"
+          time_format: "'on' LLLL d, yyyy 'at' h:mm a"
         env:
           GH_TOKEN:  ${{ secrets.gh_token || secrets.GH_TOKEN }}
